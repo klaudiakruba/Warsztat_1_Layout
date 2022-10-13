@@ -56,6 +56,7 @@ body {
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
+    line-height: 3.7rem;
 }
 
 .first-section-nav {
@@ -79,6 +80,7 @@ body {
     padding: 2.8rem 1.8rem 2.2rem;
     text-decoration: none;
     font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 .nav-link:hover {
@@ -87,24 +89,22 @@ body {
 }
 
 
-/* MAIN SECTION */
+/* SECOND SECTION */
 
-.main-section {
+.second-section {
    text-align: center;
 }
-.main-header {
+.second-header {
     font-size: 4.9rem;
     padding: 13rem 0 2rem 0;
+    line-height: 5.7rem;
 }
-
+.second-section-content {
+    line-height: 2.2rem;
+}
 .content-text {
     font-size: 1.6rem;
     padding-bottom: 6rem;
-}
-
-.first-section-btn {
-    border-radius: 4rem;
-    padding-bottom: 1.5rem;
 }
 
 .btn {
@@ -116,7 +116,93 @@ body {
     font-weight: 700;
 
 }
+
+.btn:hover {
+    color: var(--color-black);
+}
+
+.first-section-btn {
+    border-radius: 4rem;
+    line-height: 2.2rem;
+
+}
 .photo-img {
     width: 100%;
-    backgrounnd-position: center bottom;
+    background-position: center bottom;
+    padding-top: 1.5rem;
 }
+
+/*** THIRD SECTION ***/
+
+.third-section {
+    padding: 10rem 0 15rem 0;
+
+}
+
+.third-header {
+    text-align: center;
+    padding-bottom: 10rem;
+    line-height: 4.2rem;
+}
+
+.third-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18.4rem;
+    padding-bottom: 12.1rem;
+
+}
+
+.third-section-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.third-section-num {
+    padding-bottom: 1.905rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+}
+
+.third-section-num {
+    font-weight: 800;
+    padding-top: 1.4rem;
+}
+
+.third-section-text {
+    line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    color: var(--color-light-grey);
+}
+
+.circle-box {
+    position: relative;
+    border-radius : 50%;
+    width: 6.3rem;
+    height: 6.3rem;
+    background: var(--color-redish);
+}
+
+.third-section-img {
+  position: absolute;
+   left: 3rem;
+    bottom: 1rem;
+}
+
+.third-section-img.special {
+    position: absolute;
+    left: 3rem;
+    bottom: 1.4rem;
+}
+
+
+/* dokonczyc stylowanie */
+
+
