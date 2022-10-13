@@ -24,7 +24,6 @@ body {
     font-family: var(--primary-font-family);
 }
 
-
 /*** FIRST SECTION ***/
 /* HEADER */
 
@@ -46,6 +45,10 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.headers {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.6rem;
+}
 
 .logo {
     color: var(--color-primary);
@@ -62,7 +65,6 @@ body {
 .header-menu {
     display: flex;
     gap: 9.5rem;
-
     word-spacing: 0.328rem;
     text-transform: uppercase;
     border: transparent;
@@ -85,3 +87,36 @@ body {
 }
 
 
+/* MAIN SECTION */
+
+.main-section {
+   text-align: center;
+}
+.main-header {
+    font-size: 4.9rem;
+    padding: 13rem 0 2rem 0;
+}
+
+.content-text {
+    font-size: 1.6rem;
+    padding-bottom: 6rem;
+}
+
+.first-section-btn {
+    border-radius: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 2.2rem 15.7rem 2.3rem 15.7rem; /* nie wiem czy nie pojdzie do first-section-bn*/
+    box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
+    font-weight: 700;
+
+}
+.photo-img {
+    width: 100%;
+    backgrounnd-position: center bottom;
+}
