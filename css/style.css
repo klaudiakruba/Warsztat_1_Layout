@@ -8,8 +8,11 @@
     --color-green: #55DFB4;
     --color-grey: #A5A5A5;
     --color-white: #FFFFFF;
+    --color-second-grey: #F7F7F7;
+    --color-third-grey: #E8E9ED;
     --primary-font-family: 'Open Sans', sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
+
 }
 
 html {
@@ -45,6 +48,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .headers {
     font-family: 'Raleway', sans-serif;
     font-size: 3.6rem;
@@ -92,16 +96,19 @@ body {
 /* SECOND SECTION */
 
 .second-section {
-   text-align: center;
+    text-align: center;
 }
+
 .second-header {
     font-size: 4.9rem;
     padding: 13rem 0 2rem 0;
     line-height: 5.7rem;
 }
+
 .second-section-content {
     line-height: 2.2rem;
 }
+
 .content-text {
     font-size: 1.6rem;
     padding-bottom: 6rem;
@@ -126,6 +133,7 @@ body {
     line-height: 2.2rem;
 
 }
+
 .photo-img {
     width: 100%;
     background-position: center bottom;
@@ -159,20 +167,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .third-section-num {
-    padding-bottom: 1.905rem;
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     letter-spacing: 0.6rem;
-}
-
-.third-section-num {
     font-weight: 800;
     padding-top: 1.4rem;
+    padding-bottom: 1.905rem;
 }
 
 .third-section-text {
@@ -184,25 +187,227 @@ body {
 
 .circle-box {
     position: relative;
-    border-radius : 50%;
+    border-radius: 50%;
     width: 6.3rem;
     height: 6.3rem;
+    background: var(--color-primary);
+}
+
+.third-section-container .third-section-box:first-child .circle-box {
     background: var(--color-redish);
 }
 
-.third-section-img {
-  position: absolute;
-   left: 3rem;
-    bottom: 1rem;
+.third-section-container .third-section-box:last-child .circle-box {
+    background: var(--color-green);
 }
 
-.third-section-img.special {
+.third-section-img {
     position: absolute;
     left: 3rem;
     bottom: 1.4rem;
 }
 
+/* dokonczyc stylowanie bo pierwsze kółko jest nizej niz pozostałe i zle sa ustawione obrazki na kółkach */
 
-/* dokonczyc stylowanie */
 
+/*** FOURTH SECTION ***/
+.fourth-section {
+    width: 100%;
+    background: var(--color-second-grey);
+    padding: 10.5rem 25.1rem;
+}
+
+.fourth-main-container {
+    width: 112.4rem;
+    margin: 0 auto;
+
+}
+
+.fourth-smaller-container {
+    display: flex;
+    justify-content: center;
+    height: 37rem;
+    width: 100%;
+    border: 0.1rem solid var(--color-third-grey);
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+
+}
+
+.fourth-smaller-container-one {
+
+
+}
+
+.fourth-smaller-container-one > .fourth-section-text-box {
+
+
+}
+
+.fourth-smaller-container > .fourth-section-text-box > h2 {
+    padding-bottom: 3rem;
+}
+
+.fourth-section-text-box {
+    max-width: 41.6rem;
+}
+
+
+.fourth-section-header.headers {
+    line-height: 4.2rem;
+}
+
+.second-text {
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+
+.fourth-section-img {
+    width: 80%;
+    height: 80%;
+}
+
+.fourth-section-images-box {
+
+}
+
+.fourth-smaller-container:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+
+/*** PRICING ***/
+
+.pricing-container .headers {
+    text-align: center;
+    padding: 10rem 0 5rem 0;
+}
+
+.pricing-tabs {
+    gap: 5.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-tabs-box {
+    height: 46.1rem;
+    width: 37.2rem;
+    border-radius: 1.8rem;
+    text-align: center;
+    padding-top: 3.4rem;
+
+}
+
+.pricing-tabs-box:nth-child(1) {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing-tabs-box:nth-child(2) {
+    border: 1px solid var(--color-primary);
+    height: 50rem;
+    width: 40.5rem;
+    box-shadow: 0.5rem 1rem 2.7rem var(--color-primary-shadow);
+}
+
+.pricing-tabs-box:nth-child(3) {
+    border: 1px solid var(--color-green);
+}
+
+.headers-pricing {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding-bottom: 1.4rem;
+}
+
+.pricing-box-price {
+    font-size: 4.6rem;
+    line-height: 7rem;
+    font-weight: 300;
+
+}
+
+.pricing-tabs-box:nth-child(1) .pricing-box-price {
+    color: var(--color-redish);
+}
+
+.pricing-tabs-box:nth-child(2) .pricing-box-price {
+    color: var(--color-primary);
+}
+
+.pricing-tabs-box:nth-child(3) .pricing-box-price {
+    color: var(--color-green);
+}
+
+.text-box-price {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    padding-top: 0.5rem;
+}
+
+.pricing-list-text {
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.pricing-tabs-box:nth-child(2) .pricing-list-text {
+    padding-bottom: 2.6rem;
+}
+
+.pricing-tabs-box:nth-child(1) .pricing-list {
+    padding-top: 6.9rem;
+}
+.pricing-tabs-box:nth-child(2) .pricing-list {
+    padding-top: 6.1rem;
+}
+.pricing-tabs-box:nth-child(3) .pricing-list {
+    padding-top: 5rem;
+}
+
+.pricing-list-text::before {
+    content: "";
+    width: 1.1rem;
+    height: 1.1rem;
+    background-image: url("../assets/Ckechmark-1.svg");
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.x-pricing-list-text::before {
+    content: "";
+    width: 1.1rem;
+    height: 1.1rem;
+    background-image: url("../assets/Close.svg");
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.pricing-btn {
+    border-radius: 2.3rem;
+   padding: 1.6rem 5.7rem;
+    font-size: 1.3rem;
+}
+
+.pricing-tabs-box:nth-child(1) .pricing-btn {
+    background-color: var(--color-redish);
+}
+.pricing-tabs-box:nth-child(2) .pricing-btn {
+    background-color: var(--color-primary);
+    padding: 1.6rem 6.4rem;
+    box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
+}
+.pricing-tabs-box:nth-child(3) .pricing-btn {
+    background-color: var(--color-green);
+}
+
+.pricing-list {
+    padding-bottom: 7.1rem;
+}
+
+
+
+/***FORM-CONTACTS***/
 
