@@ -10,6 +10,8 @@
     --color-white: #FFFFFF;
     --color-second-grey: #F7F7F7;
     --color-third-grey: #E8E9ED;
+    --color-fourth-grey: #95989A;
+    --color-fifth-grey: #707070;
     --primary-font-family: 'Open Sans', sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
 
@@ -28,7 +30,7 @@ body {
 }
 
 /*** FIRST SECTION ***/
-/* HEADER */
+/* HEADER SECTION */
 
 .first-section {
     width: 100%;
@@ -93,7 +95,8 @@ body {
 }
 
 
-/* SECOND SECTION */
+/*** SELL MORE SECTION ***/
+/*SECOND SECTION*/
 
 .second-section {
     text-align: center;
@@ -140,8 +143,8 @@ body {
     padding-top: 1.5rem;
 }
 
-/*** THIRD SECTION ***/
-
+/*** THE MOST POPULAR SALES PLATFORM IN COUNTRY SECTION ***/
+/*THIRD SECTION*/
 .third-section {
     padding: 10rem 0 15rem 0;
 
@@ -179,10 +182,13 @@ body {
 }
 
 .third-section-text {
-    line-height: 2rem;
     font-family: 'Raleway', sans-serif;
     font-size: 1.7rem;
+    line-height: 2rem;
     color: var(--color-light-grey);
+    flex-wrap: wrap;
+    max-width: 13rem; /*dodanie właściwości by tekst się zawinął*/
+    text-align: center;
 }
 
 .circle-box {
@@ -193,24 +199,42 @@ body {
     background: var(--color-primary);
 }
 
-.third-section-container .third-section-box:first-child .circle-box {
+.third-section-box:first-child .circle-box {
     background: var(--color-redish);
 }
 
-.third-section-container .third-section-box:last-child .circle-box {
+.third-section-box:last-child .circle-box {
     background: var(--color-green);
 }
 
 .third-section-img {
     position: absolute;
+}
+
+.third-section-box:nth-child(1) .third-section-img {
+    top: 0.6rem;
+    left: 3.3rem;
+    bottom: 1.4rem;
+}
+
+.third-section-box:nth-child(2) .third-section-img {
+    top: 1.2rem;
+    left: 1.9rem;
+
+}
+
+.third-section-box:nth-child(3) .third-section-img {
+    top: 0.6rem;
     left: 3rem;
     bottom: 1.4rem;
 }
 
+
 /* dokonczyc stylowanie bo pierwsze kółko jest nizej niz pozostałe i zle sa ustawione obrazki na kółkach */
 
+/*** BE ALWAYS FIRST ***/
+/*FOURTH SECTION*/
 
-/*** FOURTH SECTION ***/
 .fourth-section {
     width: 100%;
     background: var(--color-second-grey);
@@ -220,7 +244,6 @@ body {
 .fourth-main-container {
     width: 112.4rem;
     margin: 0 auto;
-
 }
 
 .fourth-smaller-container {
@@ -231,16 +254,12 @@ body {
     border: 0.1rem solid var(--color-third-grey);
     border-radius: 0.5rem;
     background-color: var(--color-white);
-
-}
-
-.fourth-smaller-container-one {
-
-
+    margin-bottom: 3.7rem;
 }
 
 .fourth-smaller-container-one > .fourth-section-text-box {
-
+    padding-top: 9.1rem;
+    padding-left: 3.6rem;
 
 }
 
@@ -360,9 +379,11 @@ body {
 .pricing-tabs-box:nth-child(1) .pricing-list {
     padding-top: 6.9rem;
 }
+
 .pricing-tabs-box:nth-child(2) .pricing-list {
     padding-top: 6.1rem;
 }
+
 .pricing-tabs-box:nth-child(3) .pricing-list {
     padding-top: 5rem;
 }
@@ -387,18 +408,20 @@ body {
 
 .pricing-btn {
     border-radius: 2.3rem;
-   padding: 1.6rem 5.7rem;
+    padding: 1.6rem 5.7rem;
     font-size: 1.3rem;
 }
 
 .pricing-tabs-box:nth-child(1) .pricing-btn {
     background-color: var(--color-redish);
 }
+
 .pricing-tabs-box:nth-child(2) .pricing-btn {
     background-color: var(--color-primary);
     padding: 1.6rem 6.4rem;
     box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
 }
+
 .pricing-tabs-box:nth-child(3) .pricing-btn {
     background-color: var(--color-green);
 }
@@ -408,6 +431,164 @@ body {
 }
 
 
-
 /***FORM-CONTACTS***/
 
+.form {
+    display: flex;
+    justify-content: center;
+    padding-top: 15.5rem;
+}
+
+.form-info .headers {
+    font-size: 4.9rem;
+    line-height: 5.7rem;
+    padding-bottom: 2.2rem;
+}
+
+.form-contacts .contact-text {
+    padding-bottom: 4.2rem;
+}
+
+.form-email-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--color-grey);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.form-email {
+    display: flex;
+    align-items: center;
+}
+
+.form-email::before {
+    content: "";
+    background: url("../assets/Mail Icon.svg");
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.form-num {
+    display: flex;
+    align-items: center;
+}
+
+.form-num::before {
+    content: "";
+    display: inline-block;
+    background: url("../assets/Phone Icon.svg");
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 1rem;
+}
+
+.form-container {
+    margin-left: 11.4rem;
+    padding-top: 0.4rem;
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4.2rem;
+    width: 100%;
+    gap: 4.302rem;
+}
+
+.form-container {
+    width: 44rem;
+    margin-bottom: 5.9rem;
+}
+
+.form-input {
+    border: transparent;
+    border-bottom: 0.1rem solid var(--color-fourth-grey);
+}
+
+.form-text-details {
+
+}
+
+.form-text {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* STYLOWANIE CHECKBOXA */
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.consent-text {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: var(--color-fifth-grey);
+}
+
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.form-btn {
+    display: inline-block;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    padding: 2rem 9.7rem 1.9rem 9.7rem;
+    border-radius: 3.5rem;
+    box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
+    border: none;
+}
+
+
+/***FOOTER***/
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 -0.5rem 4rem var(--color-secondary-shadow);
+    background-color: var(--color-second-grey);
+    padding-left: 13.7rem;
+    padding-right: 13.6rem;
+}
+
+.footer-header {
+    padding-bottom: 0.652rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    color: var(--color-primary);
+    font-weight: 300;
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: var(--color-grey);
+}
+
+.footer-twitter {
+    padding-right: 2rem;
+}
+
+.social-media {
+    margin: 3.5rem 0 3rem 0;
+}
