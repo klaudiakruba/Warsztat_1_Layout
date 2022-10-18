@@ -246,27 +246,27 @@ body {
 .fourth-smaller-container {
     display: flex;
     justify-content: space-between;
-    /*align-items: flex-end;*/
+    align-items: flex-end;
     height: 37rem;
     width: 100%;
     border: 0.1rem solid var(--color-third-grey);
     border-radius: 0.5rem;
     background-color: var(--color-white);
     margin-bottom: 3.7rem;
+    padding-left: 3.5rem;
 }
 
-.fourth-smaller-container-one > .fourth-section-text-box {
-    max-width: 41.5rem;
-    padding: 9.1rem 3.6rem;
 
-
+.fourth-section-text-box {
+   max-width: 41.5rem;
+    font-size: 1.6rem;
 }
 
-.first-text::after {
+.first-box::after {
     content: "";
-    height: 0.4rem solid var(--color-redish);
-    width: 32.7rem;
+    border-bottom: 0.4rem solid var(--color-redish);
     display: block;
+    margin-bottom: 9.1rem;
     margin-top: 5rem;
 }
 
@@ -274,8 +274,8 @@ body {
     padding-bottom: 3rem;
 }
 
-.fourth-section-text-box {
-    font-size: 1.6rem;
+.second-text {
+    line-height: 2.2rem;
 
 }
 
@@ -283,24 +283,60 @@ body {
     line-height: 4.2rem;
 }
 
-.second-text {
-    line-height: 2.2rem;
-    font-size: 1.6rem;
+.fourth-section-images-box-first {
+    position: relative;
+    margin-right: 11.7rem;
+    margin-bottom: 3.8rem;
 }
 
-.fourth-section-img {
-    width: 80%;
-    height: 80%;
+.fourth-section-img-one {
+    position: relative;
+    z-index: 1;
+    width: 386px;
+    height: auto;
+
 }
-
-.fourth-section-images-box {
-    padding-left: 16.9rem;
-
+.background-img-square {
+    z-index: 0;
+    background-color: var(--color-redish);
+    width: 18rem;
+    height: 18rem;
+    border-radius: 4.1rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -40px;
+    right: 0;
 }
 
 .fourth-smaller-container:nth-child(2) {
     flex-direction: row-reverse;
+    padding-bottom: 3.8rem;
 }
+
+.second-box {
+    margin-bottom: 3.3rem;
+}
+
+.second-box h2 {
+    max-width: 24.6rem;
+}
+
+.fourth-section-img-two {
+    width: 42.6rem;
+    height: 32.8rem;
+}
+
+
+/*** THIRD BOX ***/
+.double-box {
+
+}
+
+.fourth-section-text-box-three {
+width:62.3rem;
+    margin-right: 6.1rem;
+}
+
 
 
 /*** PRICING ***/
@@ -328,7 +364,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .pricing-tabs-box:nth-child(1) {
@@ -527,15 +562,10 @@ body {
     border-bottom: 0.1rem solid var(--color-fourth-grey);
 }
 
-.form-text-details {
-
-}
-
 .form-text {
     display: flex;
     align-items: flex-start;
 }
-
 
 .form-checkbox {
     display: flex;
@@ -569,7 +599,6 @@ body {
 }
 
 .form-checkbox input:checked + span {
-
     background-image: url(../assets/Checkmark.svg);
     background-size: cover;
 }
