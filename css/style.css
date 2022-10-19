@@ -186,7 +186,7 @@ body {
     line-height: 2rem;
     color: var(--color-light-grey);
     flex-wrap: wrap;
-    max-width: 13rem; /*dodanie właściwości by tekst się zawinął*/
+    max-width: 13rem;
     text-align: center;
 }
 
@@ -232,6 +232,8 @@ body {
 /*** BE ALWAYS FIRST ***/
 /*FOURTH SECTION*/
 
+/**FIRST BOX**/
+
 .fourth-section {
     width: 100%;
     background: var(--color-second-grey);
@@ -258,7 +260,7 @@ body {
 
 
 .fourth-section-text-box {
-   max-width: 41.5rem;
+    max-width: 41.5rem;
     font-size: 1.6rem;
 }
 
@@ -266,17 +268,13 @@ body {
     content: "";
     border-bottom: 0.4rem solid var(--color-redish);
     display: block;
+    width: 32.7rem;
     margin-bottom: 9.1rem;
     margin-top: 5rem;
 }
 
 .fourth-smaller-container > .fourth-section-text-box > h2 {
     padding-bottom: 3rem;
-}
-
-.second-text {
-    line-height: 2.2rem;
-
 }
 
 .fourth-section-header.headers {
@@ -294,8 +292,8 @@ body {
     z-index: 1;
     width: 386px;
     height: auto;
-
 }
+
 .background-img-square {
     z-index: 0;
     background-color: var(--color-redish);
@@ -308,36 +306,101 @@ body {
     right: 0;
 }
 
+/**SECOND BOX**/
+
 .fourth-smaller-container:nth-child(2) {
     flex-direction: row-reverse;
-    padding-bottom: 3.8rem;
 }
-
-.second-box {
-    margin-bottom: 3.3rem;
+.fourth-section-text-box.second-box {
+    margin: 7rem 2rem 7rem 0;
+    width: 41.6rem;
+    height: 23rem;
 }
-
 .second-box h2 {
-    max-width: 24.6rem;
+    width: 24.6rem;
 }
 
+.second-box .second-text {
+    line-height: 2.2rem;
+    margin-bottom: 5rem;
+}
+
+.second-box::after {
+    content: "";
+    border-bottom: 0.4rem solid var(--color-primary);
+    width: 32.7rem;
+    display: block;
+}
+.fourth-section-images-box-second {
+    position: relative;
+ margin-left: 3.3rem;
+}
+.background-img-circle {
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: absolute;
+    z-index: 0;
+    top: -1.5rem;
+}
 .fourth-section-img-two {
     width: 42.6rem;
     height: 32.8rem;
+    z-index: 1;
+    position: relative;
 }
 
 
 /*** THIRD BOX ***/
-.double-box {
-
+.fourth-smaller-container-three {
+    display: flex;
+    height: 37rem;
 }
 
 .fourth-section-text-box-three {
-width:62.3rem;
+    width: 62.3rem;
     margin-right: 6.1rem;
+    background-color: var(--color-white);
+    padding: 7rem 3.5rem;
 }
 
+.fourth-section-images-box-three {
+    background-color: #55DFB4;
+   max-width: 44rem;
+}
+.double-box h2 {
+    width: 34.8rem;
+    line-height: 4.2rem;
+    margin-bottom: 3rem;
+}
+.double-box p {
+    width: 55.3rem;
+}
+.fourth-section-text-box-three > .second-text {
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 4.4rem;
+}
 
+.fourth-section-text-box-three::after {
+    content: "";
+    border-bottom: 0.4rem solid var(--color-green);
+    width: 32.7rem;
+    display: block;
+}
+
+.fourth-section-images-box-three {
+    width: 44rem;
+    height: 37rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth-section-img-three {
+    width: 29.57rem;
+    height: 20.77rem;
+}
 
 /*** PRICING ***/
 
