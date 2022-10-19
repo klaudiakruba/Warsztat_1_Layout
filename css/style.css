@@ -123,7 +123,6 @@ body {
     padding: 2.2rem 15.7rem 2.3rem 15.7rem; /* nie wiem czy nie pojdzie do first-section-bn*/
     box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
     font-weight: 700;
-
 }
 
 .btn:hover {
@@ -133,7 +132,6 @@ body {
 .first-section-btn {
     border-radius: 4rem;
     line-height: 2.2rem;
-
 }
 
 .photo-img {
@@ -146,7 +144,6 @@ body {
 /*THIRD SECTION*/
 .third-section {
     padding: 10rem 0 15rem 0;
-
 }
 
 .third-header {
@@ -161,7 +158,6 @@ body {
     align-items: flex-start;
     gap: 18.4rem;
     padding-bottom: 12.1rem;
-
 }
 
 .third-section-box {
@@ -219,7 +215,6 @@ body {
 .third-section-box:nth-child(2) .third-section-img {
     top: 1.2rem;
     left: 1.9rem;
-
 }
 
 .third-section-box:nth-child(3) .third-section-img {
@@ -335,6 +330,7 @@ body {
     position: relative;
  margin-left: 3.3rem;
 }
+
 .background-img-circle {
     width: 32rem;
     height: 32rem;
@@ -351,8 +347,8 @@ body {
     position: relative;
 }
 
-
 /*** THIRD BOX ***/
+
 .fourth-smaller-container-three {
     display: flex;
     height: 37rem;
