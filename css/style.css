@@ -64,10 +64,6 @@ body {
     line-height: 3.7rem;
 }
 
-.first-section-nav {
-
-}
-
 .header-menu {
     display: flex;
     gap: 9.5rem;
@@ -82,7 +78,7 @@ body {
     font-weight: 700;
     border-bottom: 0.4rem solid transparent;
     text-transform: uppercase;
-    padding: 2.8rem 1.8rem 2.2rem;
+    padding: 2.8rem 1.8rem 2.75rem;
     text-decoration: none;
     font-size: 1.1rem;
     line-height: 1.5rem;
@@ -123,6 +119,8 @@ body {
     padding: 2.2rem 15.7rem 2.3rem 15.7rem; /* nie wiem czy nie pojdzie do first-section-bn*/
     box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
     font-weight: 700;
+    font-size: 1.6rem;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -142,8 +140,9 @@ body {
 
 /*** THE MOST POPULAR SALES PLATFORM IN COUNTRY SECTION ***/
 /*THIRD SECTION*/
+
 .third-section {
-    padding: 10rem 0 15rem 0;
+    padding: 10rem 0 12.1rem 0;
 }
 
 .third-header {
@@ -157,7 +156,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 18.4rem;
-    padding-bottom: 12.1rem;
 }
 
 .third-section-box {
@@ -347,7 +345,7 @@ body {
     position: relative;
 }
 
-/*** THIRD BOX ***/
+/** THIRD BOX **/
 
 .fourth-smaller-container-three {
     display: flex;
@@ -499,18 +497,19 @@ body {
     content: "";
     width: 1.1rem;
     height: 1.1rem;
-    background-image: url("../assets/Ckechmark-1.svg");
     display: inline-block;
     margin-right: 1rem;
+    background-image: url("../assets/Ckechmark-1.svg");
 }
 
 .x-pricing-list-text::before {
     content: "";
     width: 1.1rem;
     height: 1.1rem;
-    background-image: url("../assets/Close.svg");
     display: inline-block;
     margin-right: 1rem;
+    background-image: url("../assets/Close.svg");
+
 }
 
 .pricing-btn {
@@ -619,6 +618,7 @@ body {
 .form-input {
     border: transparent;
     border-bottom: 0.1rem solid var(--color-fourth-grey);
+    font-size: 2rem;
 }
 
 .form-text {
@@ -647,6 +647,7 @@ body {
     border-radius: 0.4rem;
     cursor: pointer;
     margin-right: 1rem;
+    padding: 0.6rem;
 }
 
 .form-checkbox .consent-text {
