@@ -116,7 +116,7 @@ body {
     text-decoration: none;
     color: var(--color-white);
     background-color: var(--color-primary);
-    padding: 2.2rem 15.7rem 2.3rem 15.7rem; /* nie wiem czy nie pojdzie do first-section-bn*/
+    padding: 2.2rem 15.7rem 2.3rem 15.7rem;
     box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
     font-weight: 700;
     font-size: 1.6rem;
@@ -304,11 +304,13 @@ body {
 .fourth-smaller-container:nth-child(2) {
     flex-direction: row-reverse;
 }
+
 .fourth-section-text-box.second-box {
     margin: 7rem 2rem 7rem 0;
     width: 41.6rem;
     height: 23rem;
 }
+
 .second-box h2 {
     width: 24.6rem;
 }
@@ -324,9 +326,10 @@ body {
     width: 32.7rem;
     display: block;
 }
+
 .fourth-section-images-box-second {
     position: relative;
- margin-left: 3.3rem;
+    margin-left: 3.3rem;
 }
 
 .background-img-circle {
@@ -338,6 +341,7 @@ body {
     z-index: 0;
     top: -1.5rem;
 }
+
 .fourth-section-img-two {
     width: 42.6rem;
     height: 32.8rem;
@@ -361,16 +365,19 @@ body {
 
 .fourth-section-images-box-three {
     background-color: #55DFB4;
-   max-width: 44rem;
+    max-width: 44rem;
 }
+
 .double-box h2 {
     width: 34.8rem;
     line-height: 4.2rem;
     margin-bottom: 3rem;
 }
+
 .double-box p {
     width: 55.3rem;
 }
+
 .fourth-section-text-box-three > .second-text {
     line-height: 2.2rem;
     font-size: 1.6rem;
@@ -387,10 +394,11 @@ body {
 .fourth-section-images-box-three {
     width: 44rem;
     height: 37rem;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .fourth-section-img-three {
     width: 29.57rem;
     height: 20.77rem;
@@ -509,7 +517,6 @@ body {
     display: inline-block;
     margin-right: 1rem;
     background-image: url("../assets/Close.svg");
-
 }
 
 .pricing-btn {
@@ -518,7 +525,6 @@ body {
     padding: 1.6rem 5.7rem;
     font-size: 1.3rem;
     bottom: -2.5rem;
-
 }
 
 .pricing-tabs-box:nth-child(1) .pricing-btn {
@@ -629,6 +635,7 @@ body {
 .form-checkbox {
     display: flex;
     cursor: pointer;
+
 }
 
 .form-checkbox input {
@@ -660,7 +667,9 @@ body {
 
 .form-checkbox input:checked + span {
     background-image: url(../assets/Checkmark.svg);
-    background-size: cover;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .form-button {
