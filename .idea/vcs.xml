@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ONL_FER_W_23_Zaawansowany_HTML_i_CSS_Egzamin_Probny" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Warsztat_1_Layout" vcs="Git" />
   </component>
 </project>
