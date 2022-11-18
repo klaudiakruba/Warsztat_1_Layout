@@ -1,0 +1,92 @@
+
+//cwiczenie position relative i absolute oraz centrowanie kółka
+
+.fox {
+    border: 2px solid blue;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+.el {
+    width: 50%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 4 {
+    .element-#{$i} {
+        background-color: color.scale(green, $lightness: 8% * $i);
+    }
+}
+.element-1 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+}
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+
+// cwiczenia z flex-shrink i flex-grow
+   .posit {
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+
+.fox {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 20px;
+    width: 50%; // też działa
+//width: 500px;
+    height: 50%; // też działa
+//height: 300px;
+
+    $color-list: #FF5733 #FFBD33 #DBFF33 #75FF33;
+@for $i from 1 through 4 {
+    .element-#{$i} {
+        background-color: list.nth($color-list, $i);
+    }
+}
+.el {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    border: 1px solid blue;
+}
+
+.element-1 {
+    flex-grow: 6;
+}
+
+.element-2 {
+    flex-shrink: 2;
+}
+
+.element-3 {
+    flex-shrink: 4;
+}
+
+.element-4 {
+    flex-shrink: 8;
+}
+
+}
+}
